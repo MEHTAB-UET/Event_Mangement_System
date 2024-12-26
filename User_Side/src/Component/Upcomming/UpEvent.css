@@ -1,0 +1,119 @@
+/* Heading */
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.upContainer {
+  height: 100vh;
+  background: linear-gradient(135deg, #87ceeb, #b0e0e6);
+  animation: gradientShift 10s ease infinite; /* Gradual animation of gradient angle */
+  transition: background 0.5s ease, transform 0.5s ease; /* Smooth transition */
+}
+
+@keyframes gradientShift {
+  0% {
+    background: linear-gradient(
+      135deg,
+      #87ceeb,
+      #b0e0e6
+    ); /* Initial gradient */
+  }
+  50% {
+    background: linear-gradient(180deg, #87ceeb, #b0e0e6); /* 180 degrees */
+  }
+  100% {
+    background: linear-gradient(
+      135deg,
+      #87ceeb,
+      #b0e0e6
+    ); /* Back to initial angle */
+  }
+}
+
+.upcoming-events {
+  padding: 0px 100px 0px 100px;
+  padding-top: 50px;
+  /* background-color: black; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* List of events */
+.events-list {
+  gap: 30px;
+  margin-top: 20px;
+}
+
+/* Individual event card */
+.event-card {
+  background-color: #fff;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  transform: translateY(0);
+}
+
+/* Hover effect for event cards */
+.event-card:hover {
+  transform: translateY(-10px); /* Slight lift effect */
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
+}
+
+/* Event title */
+.event-card h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.event-card:hover h3 {
+  color: #007bff; /* Change color on hover */
+}
+
+/* Event details */
+.event-card p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.event-card p strong {
+  font-weight: bold;
+  color: #333;
+}
+
+.event-card .date {
+  font-size: 1.1rem;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.event-card .location {
+  font-size: 1.1rem;
+  color: #f39c12;
+  font-weight: bold;
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+  .event-card {
+    width: 90%;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .events-list {
+    gap: 15px;
+  }
+}

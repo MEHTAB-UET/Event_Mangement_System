@@ -1,0 +1,144 @@
+/* CSS for Booking Component */
+import "antd/dist/reset.css"; // Import the default Ant Design CSS.
+/* Booking.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  /* Container for Available Venues */
+  .venue-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  /* Venue Card Styles */
+  .ant-card {
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .ant-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .ant-card-body {
+    padding: 20px;
+  }
+  
+  .ant-card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .ant-card p {
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  /* Button Styles */
+  .ant-btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    font-weight: bold;
+  }
+  
+  .ant-btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
+  /* Modal Styles */
+  .ant-modal {
+    border-radius: 8px;
+  }
+  
+  .ant-modal-header {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .ant-modal-title {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .ant-modal-body {
+    padding: 20px;
+  }
+  
+  .ant-form-item-label {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .ant-input-number,
+  .ant-select,
+  .ant-date-picker {
+    width: 100%;
+  }
+  
+  .ant-modal-footer {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .ant-btn {
+    width: 100%;
+    font-weight: bold;
+    background-color: #28a745;
+    color: white;
+    border-radius: 4px;
+  }
+  
+  .ant-btn:hover {
+    background-color: #218838;
+  }
+  
+  /* Form Item Styles */
+  .ant-form-item {
+    margin-bottom: 16px;
+  }
+  
+  .ant-select {
+    border-radius: 4px;
+  }
+  
+  .ant-input-number {
+    border-radius: 4px;
+  }
+  
+  /* Booking Summary Modal */
+  .ant-modal-content {
+    padding: 20px;
+  }
+  
+  .booking-summary p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+  }
+  
+  .booking-summary strong {
+    color: #333;
+  }
+  
